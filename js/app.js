@@ -15,10 +15,12 @@ buttons.forEach((button) => {
     // eval JS string and execute when = sign is pressed and values are present
     else if (display.innerText != "" && button.id == "equal") {
         display.innerText = eval(display.innerText);
+        console.log(display.innerText);
     }
     // display null if no values in string
     else if (display.innerText == "" && button.id == "equal") {
       display.innerText = "null";
+      console.log(display.innerText);
     
     // display button values
     } else {
