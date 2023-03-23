@@ -1,27 +1,48 @@
+@font-face {
+    font-family: 'Kaph';
+    src: url("/Users/erinkates/Desktop/personal-projects/JavaScript-Calculator/Kaph-Regular.ttf");
+ }
+  
+
 html {
-    background-color: thistle;
-    cursor: pointer;
+    background: url('https://images.unsplash.com/photo-1603290989526-572939369f38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    cursor: not-allowed;
+    box-sizing: border-box;
+    font-family: 'Kaph';
 }
 
 h1 {
-    color: rgb(158, 135, 135);
-    text-shadow: 5px 5px #e8eff5;
-    font-size: 60px;
+    color: rgb(67, 51, 63);
+    text-shadow: 5px 5px rgb(225, 212, 224);
+    font-size: 70px;
     text-align: center;
 }
+
+.calculatorapp {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 
 button {
     border: 0;
     border-radius: 20px;
     height: 75px;
     width: 75px;
-    margin: 25px;
+    margin: 5px;
     font-size: 25px;
-    cursor: grabbing;
+    font-family: 'Kaph';
+    cursor: pointer;
     transition: all 200ms ease;
-    color: rgb(140, 128, 150);
+    color: rgb(67, 51, 63);
 }
-
+.buttons {
+    background-color: rgb(67, 51, 63);
+    border: 0;
+    border-radius: 20px;
+}
 button:hover {
     transform: scale(1.1);
 }
@@ -29,6 +50,30 @@ button:hover {
 button#equal, button#clear {
     height: 200px;
 }
-button#zero {
+button.zero {
     width: 300px;
 }
+
+.display-screen {
+    background-color: rgb(67, 51, 63);
+    width: 400px;
+    height: 100px;
+    border: 0;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#display {
+    margin: 10px 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(165, 134, 161);
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+}
+
