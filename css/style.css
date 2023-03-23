@@ -1,7 +1,34 @@
 html {
     background-color: thistle;
+    cursor: pointer;
 }
 
 h1 {
+    color: rgb(158, 135, 135);
+    text-shadow: 5px 5px #e8eff5;
+    font-size: 60px;
     text-align: center;
+}
+
+button {
+    border: 0;
+    border-radius: 20px;
+    height: 75px;
+    width: 75px;
+    margin: 25px;
+    font-size: 25px;
+    cursor: grabbing;
+    transition: all 200ms ease;
+    color: rgb(140, 128, 150);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal, button#clear {
+    height: 200px;
+}
+button#zero {
+    width: 300px;
 }
